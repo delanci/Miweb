@@ -2,14 +2,84 @@
 <html lang="en">
 <head>
     <title>DaymiPrimeraWeb</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
-<body>
+<body> 
+    <table style="width: 500px;" >
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td>Zanahoria</td>
+            <td>10 pesos</td>
+        </tr>
+        <tr>
+            <td>Tomate</td>    
+            <td>20 pesos</td>
+        </tr>
+        <tr>
+            <td>Mazo de lechuga</td>    
+            <td>total: 40 pesos</td>
+        </tr>
+       </tbody>
+       <tfoot>
+        <td></td>
+        <td>70$</td>
+       </tfoot>
+    </table>
+    <!--lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!--lista ordenada-->
+    <ol>
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub Elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+    <form action="/formulario" method="_post">
+        <label for="nombre">Nombre</label>
+        <input value="daymi" type="text" id="nombre" name="nombre" placeholder="escribe el nombre" />
+        <br>
+        <label  for="apellido">Apellido</label>
+        <input value="del Rio" type="text" id="apellido" name="apellido" placeholder="escribe apellido"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea  cols="50" rows="10" id="comentario" placeholder="escribe comentario" name="comentario">soy feliz</textarea>
+        <br>
+        <button type="button">Tipo button</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    
     <h1>Mi primer heading</h1>
     <h2>MI segundo heading</h2>
     <p>Chanchito feliz</p>
     <p>Pepito salio de casa</p>
     <hr>
     <h2>Otro tema q quiero hablar</h2>
-    <p>Pepito llego a casa</p>
+    <p>Pepito llego a casa cdo <span style="color:blue"> el lobo le cayo atras</span><br>  por andar por el camino largo</p>
+   <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <!--este es un comentario-->
+    <br>
+    <img src="img/get.jpg" width="100"/>
+   
 </body>
 </html>
